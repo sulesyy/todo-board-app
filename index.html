@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ToDoList</h1>
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Yeni görev başlığı..." />
+    <button id="addBtn" type="button">Ekle</button>
+  </div>
+  <div class="board">
+    <div class="column" id="draft"><h3>Draft</h3></div>
+    <div class="column" id="progress"><h3>In Progress</h3></div>
+    <div class="column" id="done"><h3>Done</h3></div>
+    <div class="column" id="canceled"><h3>Canceled</h3></div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Görev Düzenle</h2>
+      <input type="text" id="modalTitle" placeholder="Başlık" />
+      <textarea id="modalDesc" rows="4" placeholder="Açıklama"></textarea>
+      <div class="modal-buttons">
+        <button id="cancelBtn" class="cancel" type="button">Cancel</button>
+        <button id="saveBtn" class="save" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
